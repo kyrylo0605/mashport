@@ -1,0 +1,329 @@
+/*------ SEARCH STYLE ----------*/
+
+#search {
+    padding: 0 0 0 28px;
+    width: 147px;
+    border: 1px solid #d0d0d0;
+	line-height: 25px;
+    height: 25px;
+	background: url(../images/search-icon.jpg) no-repeat 10px center #ededed;
+	margin-top: 4px;
+	border-radius: 6px;
+	position: relative;
+   /* behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}
+
+#search input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    float: left;
+	line-height: 25px;
+	height: 25px;
+	color: #959595;
+	font-size: 11px;
+	font-size: 1.1rem;
+}
+
+input[type="text"]:focus {
+    outline: medium none;
+}
+
+.compare label {
+	color: #78A22F;	
+}
+
+.results div.selector span {
+    width: 18px;
+	color: #fff;
+	text-shadow: #1a5e93 1px 1px;
+}
+
+.results div.selector select {
+    min-width: 55px;
+}
+
+.results  div.selector {
+    width: 50px;
+}
+
+#display option {
+	padding-left: 10px;	
+	line-height: 20px;
+}
+
+select {
+	color: #555;
+	text-shadow: none;
+}	
+
+input.form-field {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C2C2C2;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    padding: 0 5px;
+    width: 230px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	position: relative;
+    /*behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}
+
+#contact-form label {
+    clear: both;
+    display: block;
+    margin-bottom: 6px;
+	color: #85a312;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+#contact-form {
+    margin: 20px 0;
+    width: 480px;
+}
+
+#submit {
+	color: #fff;
+	font-size: 15px;
+	font-size: 1.5rem;
+	background: #2485d0;
+	font-weight: normal;
+	padding: 6px 16px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	position: relative;
+   /* behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+	border: 1px solid #407198;
+	text-shadow: -1px -1px #1c6aa5;
+	display: block;
+}
+
+textarea.msg-field {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C2C2C2;
+    height: 90px;
+    margin-bottom: 24px;
+    padding: 5px;
+    width: 300px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	position: relative;
+  /*  behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}
+
+input.error, textarea.error {
+    border: 1px solid #C00000 !important;
+}
+
+input[type="radio"].error {
+	border: none !important;
+	
+}
+
+#contact-form label.error {
+    color: #C00000;
+    display: block;
+    float: right;
+    line-height: 32px;
+}
+
+#contact-form #uniform-title label.error, #contact-form #uniform-country label.error {
+	right: -236px;
+	position: absolute;
+	margin-top: -27px;	
+}
+
+#contact-form #uniform-why_masport_0 label.error {
+	right: -461px;
+	position: absolute;
+	margin-top: -27px;	
+}
+
+
+/** DEALER LOCATION SEARCH BOX **/
+
+#dealerLocation {
+   
+}
+
+div.checker {
+    margin-top: -4px !important;
+}
+
+#uniform-title.selector, #uniform-country.selector, #contact-form #uniform-undefined.selector {
+	overflow: visible;	
+}
+
+#dealerLocation input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+	color: #bbb;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+#dealerLocation input.field  {
+	width: 210px;
+	padding-left: 10px;
+    border: 1px solid #d0d0d0;
+	line-height: 28px;
+    height: 28px;
+	background: #fff;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+
+#dealerLocation input.darker {
+	color: #353535;
+}
+
+input[type="text"]:focus {
+    outline: medium none;
+}
+
+#dealerLocation input.blueBtn {
+	color: #fff;
+	font-size: 15px;
+	font-size: 1.5rem;
+	background: #2485d0;
+	font-weight: normal;
+	padding: 6px 16px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	position: relative;
+   	behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+	border: 1px solid #407198;
+	text-shadow: -1px -1px #1c6aa5;
+	text-decoration: none;
+	margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+#dealerLocation .formItem p {
+	color: #8f8f8f;
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 0;
+	padding-left: 28px;	
+	width: 226px;
+}
+
+#dealerLocation .formItem {
+	border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 14px;
+    padding-top: 10px;
+}
+
+#dealerLocation .formItem.break {
+	margin-bottom: 10px;	
+}
+
+#dealerLocation .formItem .subFormItem {
+	margin-left: 28px;
+	padding-top: 4px;
+	color: #8f8f8f;
+}
+
+.subFormItem div.checker {
+    margin-right: 0;
+}
+
+
+
+.registration input.form-field {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C2C2C2;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    padding: 0 5px;
+    width: 230px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	position: relative;
+/*	behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}
+
+.registration  #contact-form label {
+    clear: both;
+    display: block;
+    margin-bottom: 6px;
+	color: #85a312;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.registration  #contact-form {
+    margin: 20px 0;
+    width: 480px;
+}
+
+
+.registration div.selector, .registration div.selector span, .faqCategories div.selector, .faqCategories div.selector span, #contact-form div.selector, #contact-form div.selector span {
+    background-image: url("../images/sprite-1.png");
+    background-repeat: no-repeat;
+}
+
+.registration div.selector, #contact-form div.selector {
+	width: 234px;
+	margin-bottom: 24px;
+	overflow: visible;
+}
+
+.registration div.selector span, #contact-form div.selector span {
+	width: 206px;
+}
+
+.registration div.selector select, #contact-form div.selector select {
+	/*margin-left: 2px;*/
+    width: 241px;
+	cursor: pointer;
+}
+
+#contact-form.registration p label { 
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+	font-size: 1.2rem;
+	color: #555555;
+	
+}
+
+#contact-form.registration p {
+	margin-bottom: 24px;	
+}
+
+.registration .formItem {
+	margin-bottom: 24px;
+}
+
+.registration .formItem  div {
+	margin-bottom: 6px;
+}
+
+.registration .formItem  div.checker {
+	margin-bottom: 0;
+}
+
+/*Custom CSS for warranty form elements*/
+#purchase_date_field {
+	width: 75% !important;
+	float: left;
+    background: #eee;
+}
+
+#contact-form button.ui-datepicker-trigger {
+	float: inherit;
+	height: 34px;
+	background: #2485d0;
+	color: white;
+	border: 1px solid #407198;
+	margin-left: 20px;
+}

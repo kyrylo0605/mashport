@@ -1,0 +1,408 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+ * Load ALL CSS
+ */ 
+
+/* Reset all browser behaviors */
+@import url(reset.css);
+
+/* Layout styling */
+@import url(layout.css);
+
+/* Typography styling */
+@import url(typography.css);
+
+/* Menu styling */
+@import url(menus.css);
+
+/* Form styling */
+@import url(forms.css);
+@import url(uniform.default.css);
+
+/* Fancybox styling */
+@import url(fancybox/jquery.fancybox-1.3.4.css);
+
+/* Video Carousel styling */
+@import url(jquery-carousel.css?v=14);
+
+/* Date picker */
+@import url(ui-lightness/jquery-ui-1.8.18.custom.css);
+
+/* Where to buy scroll style*/
+/*@import url(jquery.jscrollpane.css);*/
+
+
+@media print
+{
+			
+
+footer, .productDetail #rightCol, .print, .choose, .intro .checker, .intro label, .productDetail .similarProduct,  .productDetail .otherProducts, .productDetail .compare a, #dotss a, aside #goBack, #dealerLocation input.blueBtn, #wrap.compareprint, footer.compareprint, .fancybox-bg, header, #rightCol, #content_wrapper aside .compare, #fancybox-close, .zoom, .whereHelp, #cookiesNotifier {
+	display: none !important;	
+}
+
+.tab-container #overview, .tab-container #specification {
+	display: block !important;
+}
+
+.keyGreen {
+	background: #85a312;	
+}
+
+.keyYellow {
+	background: #e3c01c;
+}
+
+.keyRed {
+	background: #9d1537;
+}
+
+.keyBlue {
+	background: #004274;
+}
+
+.keyGrey {
+	background: #666666;	
+}
+
+#main.productDetail .pageRight {
+	background: none !important;	
+}
+#dealerResults ol, #dealerResults {
+	height: auto !important;
+	overflow: visible !important;
+}
+
+header nav ul#menu {
+	display: none;	
+}
+
+header #topnav ul#topmenu, .breadcrumbs, #search {
+	display: none !important;	
+
+}
+
+.non-print {
+	display:none !important;
+}
+
+#main.containerWide {
+	margin-bottom:0 !important;
+	padding-bottom: 0;
+}
+
+#wrap {
+	min-height: auto !important;
+	height: auto !important; 
+	border-bottom: none !important;
+	overflow: visible !important;
+	background: #ffffff !important;
+}
+
+html {
+	background: #ffffff !important;
+}
+
+#content_wrapper {
+	box-shadow: none !important;
+		
+}
+
+/* for the compare products pop up */
+#fancybox-overlay {
+	opacity: 1 !important;
+	background: #ffffff !important;	
+	height: 600px !important;
+}
+
+.ie7 #fancybox-overlay {
+	height: 800px !important;
+}
+
+#fancybox-wrap {
+	left: 0 !important;	
+	top: 0 !important;
+}
+
+.infoboxwindow {
+	background: #fff !important;
+	opacity: 1 !important;
+	box-shadow: none !important;
+}
+
+ #map_canvas, .dealerLocator #content {
+	float: none !important;
+}
+
+.dealerLocator #content {
+	height: auto !important;	
+	overflow: visible !important;	
+}
+ 
+#dealerResults li.president, #dealerSearch, #wrap {
+	background-color: #fff;	
+}
+
+#main.dealerLocator { 
+	padding-left: 81px;
+	height: auto !important;
+	overflow: visible !important;
+}
+#main.dealerLocator #content_wrapper {
+	position: relative !important;
+	overflow: visible !important;	
+	height: auto !important;
+}
+
+#dealerResults li {
+	display: block !important;
+}
+
+
+#directions {
+    padding: 0 18px;
+	height: auto !important;
+	overflow: visible !important;
+	display: block !important;
+	width: 600px !important;
+}
+
+.dealerLocator aside {
+	float: none !important;	
+	display: block;
+	height: auto !important;
+}
+
+#wrap #dealerResults .storeRank {
+	display: block !important;
+	color: #ffffff !important;
+}
+
+#wrap #dealerResults li.active .storeRank {
+	color: #ffffff;
+}
+
+th.features, th.specification {
+	color: #ffffff !important;	
+}
+
+
+.helpmechoose .selector, .helpmechoose .selector span {
+	background: none;	
+}
+
+
+
+/* IE8 HACKS */
+
+
+.ie8 {
+	font-size: 9px !important;
+	line-height: 12px !important;		
+}
+
+
+.ie8 .dealerLocator #content {
+	/*margin-bottom: 80px !important;*/
+	height: 830px !important;
+	overflow: hidden !important;
+	display: block !important;
+	position: relative;
+	z-index: 5;
+} 
+
+.ie8 #content #map_canvas {
+	height: 830px !important;
+	overflow: hidden !important;
+	display: block !important;
+	min-height: 200px !important;
+	margin-bottom: 60px !important;
+} 
+
+.ie8 #content #map_canvas {
+	margin-left: -25px;
+	padding-right: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	zoom: 1;
+	position: relative;
+	z-index: 5;
+}
+
+.ie8 #content #map_canvas div {
+	zoom: 1;	
+}
+.ie8 .dealerLocator aside {
+	margin-top: 20px !important;
+	/*min-height: 600px;*/
+	background-color: #fff;
+	width: 100% !important;
+	zoom: 1;	
+	position: relative;
+	z-index: 100;
+}
+
+.ie8 #directions {
+	zoom: 1;
+	z-index: 100;
+	background-color: #fff;
+	width: 600px;	
+}
+
+.ie8 #content_wrapper {
+	position: relative;
+}
+/*.ie8 #main.dealerLocator #content_wrapper, .ie8 #main.dealerLocator {
+	overflow: hidden !important;	
+	height: 600px !important;
+}*/
+
+.ie8 .showcase img {
+	width: 220px !important;
+}
+
+.ie8 .showcase a {
+	text-align: left;
+}
+
+.ie8 .showcase, .ie8 .showcaseWrapper  {
+	height: 280px !important;
+    width: 300px !important;
+}
+
+.ie8 p, .ie8 .tabs, .ie8 #dealerResults .suburb, .ie8 #dealerResults .storeRank  {
+	font-size: 9px !important;
+	line-height: 12px !important;	
+}
+
+.ie8 .productDetail aside {
+	width: 310px !important;	
+}
+
+.ie8 .warranty img {
+	height: 50px !important;	
+}
+
+.ie8 .rrp {
+	font-size: 11px !important;
+	line-height: 12px !important;	
+	padding-bottom: 0 !important;
+	
+}
+
+.ie8 #details {
+	width: 450px !important;
+}
+
+.ie8 #specification li {
+	width: 200px !important;
+	margin-bottom: 2px !important;
+	font-size: 9px !important;	
+}
+
+.ie8 #specification li.value, .ie8 #specification li.feature {
+	width: 180px !important;
+}
+
+.ie8 #main.productDetail .pageRight {
+	float: left !important;	
+}
+
+.ie8 h1{
+	font-size: 13px !important;
+	line-height: 15px !important;	
+}
+
+.ie8 #details .intro {
+	padding-bottom: 4px !important;	
+}
+
+.ie8 #compareProducts {
+	width: 640px !important;
+	margin-left: -5px;	
+}
+
+.ie8 .compareProducts td img {
+	max-height: 70px !important;
+}
+
+.ie8 #dealerLocation input {
+	font-size: 9px !important;
+	line-height: 12px !important;
+	width: 200px !important;
+	height: 20px !important;
+	margin-bottom: 2px !important; 
+}
+
+.ie8 h3  {
+	font-size: 11px !important;	
+}
+
+.ie8 #dealerResults li {
+	padding-bottom: 2px !important;
+	padding-top: 2px !important;
+}
+
+.ie8 #dealerResults li img {
+	width: 18px !important;
+	height: 25px !important;	
+}
+.ie8 #dealerResults .storeRank {
+	left: 11px !important;
+	top: 3px !important;
+}
+
+.ie8 .infoboxwindow .keys {
+	display: none !important;	
+}
+.ie8 .email, .ie8 .phone, .ie8 .fax, .ie8 .website, .ie8 .addy {
+	margin-bottom: 2px !important;	
+}
+
+.ie8 #directions b, .ie8 #directions p, .ie8 #directions div {
+	font-size: 9px !important;
+	line-height: 12px !important;
+}
+
+.ie8 #main.dealerLocator {
+	padding-left: 0 !important;	
+}
+
+.ie8 #help-me-choose-form .checker {
+	height: 19px;
+	margin: 0;
+	padding: 0;
+}
+
+.ie8 #help-me-choose-form .tip {
+	line-height: 19px;
+	
+}
+
+
+
+/*.ie8 #wrap {
+	overflow: hidden !important;	
+	height: 600px !important;
+}*/
+
+.ie8 .dealerLocator aside {
+	padding-left: 10px !important;
+	
+}
+
+
+.ie8 .infoboxwindow {
+	width: 180px !important;	
+}
+
+.ie8 .infoBox img {
+	display: none;	
+}
+
+}

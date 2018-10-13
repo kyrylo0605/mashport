@@ -1,0 +1,159 @@
+/** Code below is to help the page look okay before the JS loads **/
+
+.video li {
+	float: left;
+	height: 124px;
+    width: 152px;
+	display: block;	
+	list-style: none;
+	margin-right: 45px;
+}
+
+.video ul {
+	display: block;	
+	height: 122px;
+    overflow: hidden;
+}
+
+.video h3 {
+	display: block;	
+	clear: both;
+}
+
+
+/** Real code starts from here **/
+
+.carousel-outer {
+	margin-top: 40px;	
+}
+
+.jcarousel-skin {
+    padding: 0 36px;
+    margin-bottom: 40px;    
+}
+
+.jcarousel-skin .jcarousel-container {
+}
+
+.jcarousel-skin .jcarousel-direction-rtl {
+    direction: rtl;
+}
+
+.jcarousel-skin .jcarousel-container-horizontal {
+ 
+}
+
+.jcarousel-skin .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin .jcarousel-clip-horizontal {
+    width:  596px;
+    height: 124px;
+}
+
+.jcarousel-skin .jcarousel-item {
+    width: 152px;
+    height: 124px;
+}
+
+.jcarousel-skin .jcarousel-item img {
+    width: 152px;
+    height: 94px;
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin .jcarousel-item a {
+    color: #004275;
+    text-decoration: underline;
+}
+
+.jcarousel-skin .jcarousel-item a:hover {
+    color: #595959;
+    text-decoration: underline;
+}
+
+
+.jcarousel-skin .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 69px;
+}
+
+.jcarousel-skin .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin .jcarousel-next-horizontal {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    width: 9px;
+    height: 16px;
+    cursor: pointer;
+	background:url(../images/carousel-next2.jpg) no-repeat 0 -16px;
+}
+
+.jcarousel-skin .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url("../images/carousel-prev.jpg");
+}
+
+.jcarousel-skin .jcarousel-next-horizontal:hover,
+.jcarousel-skin .jcarousel-next-horizontal:focus {
+    background-position: 0 -32px;
+}
+
+.jcarousel-skin .jcarousel-next-horizontal:active {
+    background-position:  0 -16px;
+}
+
+.jcarousel-skin .jcarousel-next-disabled-horizontal,
+.jcarousel-skin .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position:   0 0;
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal {
+    position: absolute;
+    top: -25px;
+    left: 522px;
+    width: 9px;
+    height: 16px;
+    cursor: pointer;
+    background: transparent url("../images/carousel-prev2.jpg") no-repeat 0 -16px;
+}
+
+.jcarousel-skin .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin .jcarousel-prev-horizontal:focus {
+    background-position: 0  -32px;
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal:active {
+    background-position: 0 -16px;
+}
+
+.jcarousel-skin .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: 0 0;
+}

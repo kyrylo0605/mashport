@@ -1,0 +1,1275 @@
+/*------ STICKY FOOTER ----------*/
+
+
+#wrap {
+    min-height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.ie6 #wrap,
+.ie8 #wrap {
+    display:table;
+    height:100%
+}
+
+/*section.container{
+    overflow:auto;
+    padding-bottom: 60px; 
+}*/
+
+footer {
+	height: 304px;
+	margin-top: -304px;
+	position: relative;
+	overflow: hidden;
+	background: url(../images/ft-border.jpg) repeat-x top center #e6e6e6;	
+	
+}
+
+/*Opera Fix*/
+body:before {
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+}
+
+/*------ HEADER STYLE ----------*/
+
+header{
+    height:111px;
+    background: url(../images/header-bkg.jpg) repeat-x #fefefe;
+}
+
+header #logo{
+    display:block;
+    float:left;
+	width: 225px;
+    height: 69px;
+    margin-top: 17px;
+    width: 225px;
+	background: url(../images/logo-bkg.jpg) no-repeat;
+}
+
+/*------ Main Menu STYLE ----------*/
+
+#menu li {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+
+header nav {
+    margin: 0 auto;
+    position: relative;
+    z-index: 200;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+header nav ul#menu {
+    display: block;
+    float: left;
+    padding:13px 0 0 40px;
+}
+
+.ie7 header nav ul#menu {
+	padding-left:62px !important;
+	float:right !important;
+}
+
+header nav ul li {
+	margin-right:85px;
+}
+
+header nav ul li a {
+    display: block;
+    float: left;
+    height:40px;
+    position:relative;
+	line-height: 20px;
+    color: #004274 !important;
+    text-decoration: none;
+	float: left;
+	padding-top: 20px;
+}
+
+header .support a {
+	line-height: 28px;
+}
+
+
+header nav ul li.lastChild,
+header nav ul li.lastChild a{
+    padding-right:0 !important;
+	margin-right:0 !important;
+}
+
+ 
+.ie6 header nav ul li a{
+    float: left;
+}
+
+header nav li.active a {
+    color: #353535 !important;
+}
+
+
+header nav li:hover,
+header nav li.sfhover,
+header nav li.active{
+    border-bottom: 3px solid #353535 !important;    
+}
+
+header nav #menu li.big:hover,
+header nav #menu li.big.sfhover {
+	border-bottom: none !important;
+}
+
+header nav li ul li:hover,
+header nav li ul li.sfhover,
+header nav li ul li.active{
+    border: none !important;    
+}
+
+.ie7 header nav li.active a.toplist{
+    border: none !important;    
+}
+
+
+header nav ul li a:visited {
+    color: #f1f2f3;
+}
+
+@media screen and (min-width: 769px) {
+    header nav li a.topList {
+        border-bottom: none;
+        padding-left: 31px;
+        margin-left: -35px;
+        padding-right: 31px;
+        padding-top: 21px;
+        margin-right: -37px;
+        z-index: 2000;
+        height:35px;
+        margin-bottom:5px;
+        position:relative;
+        zoom: 1;
+        /*behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+    }
+
+
+
+    .ie7 header nav li a.topList {
+        height:40px;
+    }
+
+    header nav li a.hovered {
+        color: #353535!important;
+        padding-left: 30px;
+        margin-left: -35px;
+        padding-right: 30px;
+        margin-right: -37px;
+        padding-top: 20px;
+        z-index: 2000;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    header nav li.lastChild a.hovered {
+        padding-right: 30px !important;
+        margin-right: -36px !important;
+        z-index: 2000;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+}
+
+
+
+
+/*------ TOP MENU STYLE ----------*/
+
+header #topnav ul#topmenu{
+    display: block;
+    float: left;
+    padding-left: 40px;
+    margin: 8px 0 0;
+    height: 20px;
+	position:relative;
+	z-index:999;
+}
+
+#topnav {
+    display: block;
+    float: left;
+    width: 734px;
+}
+
+header #topnav ul li{
+    display: block;
+    float: left;
+    height:10px;
+    padding-right: 66px;
+    position:relative;
+    list-style: none;
+}
+
+header #topnav ul li.lastChild{
+    padding-right:0;
+}
+
+header #topnav ul li a, header #topnav ul li a:visited {
+    color: #353535;
+	font-size: 11px;
+    font-size: 1.1rem;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 2020;
+}
+
+.ie6 header #topnav ul li a{
+    float: left;
+}
+
+header #topnav li a:hover,
+header #topnav li.sfhover a{
+    color: #004274 !important;
+}
+
+
+/*------ top nav Dropdown STYLE ----------*/
+
+#topnav ul#topmenu  li:hover ul {
+	display: block;
+}
+
+#topnav ul#topmenu li ul {
+    visibility: hidden;
+	display:none;
+    width: 160px;
+	height: auto;
+    left: 0;
+	z-index: 999;
+	padding: 23px 0 6px 0;
+	margin: -23px -65px 0 -10px;
+	background: #FFFFFF;
+    -moz-box-shadow: 0 0 5px #dedede;
+    -webkit-box-shadow: 0 0 5px#dedede;
+    box-shadow: 0 0 5px #dedede;
+    /*filter:progid:DXImageTransform.Microsoft.Shadow(color='#dedede',direction='120',strength='3');*/
+	position: relative;
+   /* behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}
+
+.ie7 #topnav ul#topmenu li ul {
+
+}
+
+.ie8 #topnav ul#topmenu li ul {
+	border: 1px solid #dedede;
+}
+
+
+.ie6 #topnav ul#topmenu li:hover ul, 
+.ie6 #topnav ul#topmenu li.sfhover ul{
+	visibility: visible !important;	
+	display:block !important;
+	height:100px;
+	z-index:999;
+}
+#topnav ul#topmenu li:hover ul,
+#topnav ul#topmenu li.shover ul {
+	visibility: visible !important;	
+	background:#fff !important;
+}
+
+#topnav ul#topmenu li ul li {
+	float: none;
+	display: block;
+	width: auto;
+	padding: 0;
+}
+
+#topnav ul#topmenu li ul li,
+.ie6 #topnav ul#topmenu li ul li{
+	display: block;
+	float: none;
+	padding:0px 10px;
+	height: auto;
+	position: relative;
+	z-index: 920;
+	margin:0;
+	text-transform: none;
+}
+
+#topnav ul#topmenu li ul li a{
+	font-size:11px;
+	color: #004275 !important;
+    display: block;
+    float: none;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;
+    text-shadow: 1px 1px #FFFFFF;
+    text-transform: none;
+}
+
+#topnav ul#topmenu li ul li a:hover{
+	color:#828181 !important;
+}
+
+/*------ DROP DOWN MENU  ----------*/
+
+#menu .megaMenu li:hover, #menu .megaMenu li.active {
+    border-bottom: none;    
+}
+
+#menu .megaMenu li {
+    position:relative;
+    padding:0px ;
+    margin-right: 0;
+	
+}
+
+/*#menu .megaMenu .first ul, #menu .megaMenu .last ul {
+	padding-bottom: 20px;	
+}*/
+#menu li .megaMenu .first .nosplitty ul li a, #menu li .megaMenu .last .nosplitty ul li a {
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
+	text-decoration: none !important;
+	width: 100%;
+	border-bottom: 1px solid #E3E3E3 !important;
+    padding-bottom: 10px !important;
+}
+
+#menu li .megaMenu .first .nosplitty ul ul li a, #menu li .megaMenu .last .nosplitty ul ul li a {
+	width: 150px;	
+}
+
+#menu li .megaMenu .first .nosplitty ul li a:hover, #menu li .megaMenu .last .nosplitty ul li a:hover {
+	color: #004275 !important;
+}
+
+#menu li {
+    position:relative;
+}
+
+#menu li:hover {
+    z-index:10000; /* shadow above adjacent li */
+}
+
+#menu  a {
+    color:#000;
+    outline:0;
+    text-decoration:none !important;
+}
+
+
+.whyMasport a {
+	margin-top: 6px;
+}
+
+@media screen and (min-width: 769px) {
+    /* ----------- Hide/Show Div ---------- */
+    #menu .megaMenu {
+        position:absolute;
+        left:-999em;
+        width:890px;
+        height:auto;
+        padding:25px 20px 10px;
+        border-top:0;
+        font-weight:normal;
+        text-align:left;
+        margin-left: 2px;
+        background: #fff;
+    }
+
+    #menu .megaMenu.lifestyle  {
+        position:absolute;
+        left:-999em;
+
+        width:640px;
+        height:auto;
+        padding:25px 26px 10px;
+        border-top:0;
+        font-weight:normal;
+        text-align:left;
+        margin-left: 2px;
+        background: #fff;
+    }
+
+    #menu .megaMenu.support  {
+        position:absolute;
+        left:-999em;
+        width:140px;
+        height:auto;
+        padding:25px 26px 10px;
+        border-top:0;
+        font-weight:normal;
+        text-align:left;
+        margin-left: 2px;
+        background: #fff;
+    }
+
+    #menu li .megaMenu.support li {
+        width: auto;
+    }
+
+
+    #menu li:hover div.lifestyle,
+    #menu li:hover div {
+        top: 56px;
+    }
+
+    .ie8 #menu li:hover div.lifestyle,
+    .ie8 #menu li:hover div {
+        top: 0px;
+    }
+
+    .ie8 #menu li:hover div.megaMenu {
+        top: 56px !important;
+    }
+
+    .ie7 #menu li:hover div.megaMenu {
+        top: 61px !important;
+    }
+
+
+    #menu .showLifestyleMenu {
+        display:none;
+        top: auto;
+        left: -379px !important;
+    }
+
+    #menu li:hover div {
+        left: -410px !important;
+    }
+
+    #menu li:hover div.support {
+        left: -60px !important;
+    }
+
+    #menu ul{
+        margin-left:0px;
+    }
+
+    .megaMenu{
+        -moz-box-shadow: 0 0 3px #999;
+        -webkit-box-shadow: 0 0 3px #999;
+        box-shadow: 0 0 3px #999;
+        position:relative;
+        /*behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+    }
+
+    .ie9 .megaMenu{
+        box-shadow: 0 0 5px #999;
+    }
+
+    .ie7 .megaMenu{
+        -moz-box-shadow:none;
+        -webkit-box-shadow: none;
+        box-shadow: 0 2px 5px #999;
+        zoom: 1;
+        position:relative;
+        /*behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+    }
+
+
+    .ie8 #menu .megaMenu{
+        border:1px solid #ccc;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow:none;
+        margin-top:-1px !important;
+        /*-moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow:none;
+        margin-top:55px;*/
+    }
+
+
+    #menu .showMenu {
+        display:none;
+        top: auto;
+        left: -410px !important;
+    }
+}
+
+/* --------- Wi1px Div Styles --------- */
+
+#menu li .megaMenu ul li ul  {
+    float:left;
+    width:165px;
+    padding-bottom: 0;
+}
+
+#menu li .megaMenu ul li ul li{
+    float:left;
+    width:130px;
+    display:block;
+    margin-bottom:0px;
+    padding-top: 10px;
+}
+
+#menu li .megaMenu li {
+    display:block !important;
+    width:250px !important;
+    float:left;
+    position:relative;
+    margin-bottom:0px;
+    list-style: none !important;
+    height: auto;
+}
+
+#menu li .megaMenu .last.column li {
+    margin-right: 0 !important;
+}
+
+#menu li .megaMenu li.whyMasport img {
+    float: right;
+}
+
+
+
+#menu li .megaMenu li a {
+    text-decoration:none;
+    color: #004275 !important;
+    float:left;
+    clear:left;
+    width:100%; /* For IE6/7 */
+    font-size: 14px;
+    font-size: 1.4rem !important;
+    color:#4e4e4e ;
+    padding:0px !important;
+    margin-bottom:5px;
+	height: auto;
+	margin-right: 0;
+}
+
+#menu li .megaMenu li a {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px !important;
+}
+
+#menu li .megaMenu.support li a {
+    border-bottom: none;
+    padding-bottom: 0px !important;
+	color: #004275 !important;
+	margin-bottom: 0;
+}
+
+#menu li .megaMenu.support li a:hover {
+	color: #85A312 !important;
+}
+
+#menu li .megaMenu li ul li a {
+    font-size: 12px !important;
+    font-size: 1.2rem !important;
+    line-height: 16px !important;
+    font-weight:normal !important;
+    color: #004275 !important;
+    padding: 0px !important;
+    margin-bottom:0px;
+	border: none !important;
+	text-decoration: underline !important;
+}
+
+#menu li .megaMenu .first .nosplitty ul ul li a, #menu li .megaMenu .last .nosplitty ul ul li a {
+	color: #004275;
+	font-size: 12px !important;
+    font-size: 1.2rem !important;
+    line-height: 16px !important;
+    font-weight:normal !important;
+	padding: 0px !important;
+    margin-bottom:0px;
+	border: none !important;
+	text-decoration: underline !important;	
+}
+
+#menu .megaMenu a:hover, #menu  .megaMenu a:focus, #menu  .megaMenu a:active {
+    text-decoration:none;
+    color:#555;
+}
+
+#menu li .megaMenu li ul li a:hover  {
+    color: #85a312 !important;
+    text-decoration: underline !important;
+}
+
+#menu li .megaMenu .first .nosplitty ul ul li a:hover, #menu li .megaMenu .last .nosplitty ul ul li a:hover {
+	color: #85a312 !important;
+}
+
+#menu li .megaMenu li ul li a {    
+    color: #004275 !important;
+    text-decoration: underline !important;
+    border-bottom: none;
+    float: left;
+    width: 150px;
+    clear: none;
+}
+
+.lifestyle .megaList{
+    width:640px;
+	height:auto;
+}
+
+.megaList {
+    width:890px;
+	height:auto;
+}
+
+.megaList div.last.column {
+	margin-right: 0;	
+}
+
+.megaList div.column li.dontsplit {
+    height:auto;
+    clear:both;
+    padding-bottom:15px !important;
+}
+
+.megaList div.column {
+    margin-right: 70px;
+	height:auto;
+	width: 250px !important;
+}
+
+.lifestyle .megaList div.column.last {
+    float: right !important;
+    margin-right: 70px;
+}
+
+#menu li .megaMenu li ul li p {
+    width: 150px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #919191;
+    line-height: 16px;
+    float: left;
+    margin-top: 0;
+	margin-bottom: 0;
+}
+
+#menu li .megaMenu li ul li img {
+    float: left;
+    padding-right: 35px;    
+}
+
+/*------ FOOTER STYLE ----------*/
+
+footer nav{
+    float: right;
+    height: auto;
+    width: 739px;
+	
+    border-top: #fff 1px solid;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /*Chrome, Opera and Safari, picked up by all webkit enabled browsers*/
+    footer nav {
+        margin-top:-1px;
+    }
+}
+
+
+.ie9 footer nav, .ie8 footer nav, .ie10 footer nav {
+    margin-top: -1px;
+}
+
+footer nav ul {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 20px 0 80px;
+}
+
+footer nav ul li {
+    display: block;
+    float: left;
+    width: 195px;
+}
+
+footer nav ul li.lastChild {
+    width: auto;
+}
+
+footer nav li a {
+    padding-right: 15px;
+    color: #004275;
+    display: block;
+    line-height: 16px;
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+}
+
+footer .usefulLinks {
+    padding-right: 15px;
+    color: #004275;
+    display: block;
+    line-height: 16px;
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+}
+
+footer nav ul li a:hover {
+    color: #828181 !important;
+}
+
+footer nav li a:visited {
+    color: #004275;
+}
+
+footer nav li ul{
+    padding: 0;
+}
+
+footer nav li ul li {
+    display: block;
+    float: none;
+    width: auto;
+}
+
+footer nav li ul li a {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #464646;
+    padding-bottom: 0;
+}
+
+footer nav li ul li a:visited {
+    color: #464646;
+}
+
+footer .logo {
+    display: block;
+    float: left;
+    height: 96px;
+    padding-top: 30px;
+    width: 141px;
+    padding-right: 80px;
+}
+
+footer .social {
+    float: right;
+    display: block;    
+    width: auto;
+    margin-top: 18px;
+}
+
+.ie7 footer .social {
+/*  margin-right:-40px;*/
+}
+
+footer .copyright {
+    float: left;    
+}
+
+/** ------ SPLASH PAGE REGION SELECT MENU ------- **/
+
+#regionSelect {
+    position: relative;
+    width: 658px;
+    height: 382px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#regionSelect li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#regionSelect li.northAmerica {
+    background: url("../images/splash/northamerica.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 233px;
+    position: absolute;
+    width: 294px;
+    top: 0;
+    left: 0;
+    background-position: 0 0;
+}
+
+#regionSelect li.northAmerica:hover {
+    background-position: 0 -233px;
+}
+
+#regionSelect li.southAmerica {
+    background: url("../images/splash/southamerica.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 176px;
+    position: absolute;
+    width: 153px;
+    top: 205px;
+    left: 104px;
+    background-position: 0 0;
+}
+
+#regionSelect li.southAmerica:hover {
+    background-position: 0 -176px;
+}
+
+#regionSelect li.europe {
+    background: url("../images/splash/europe.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 155px;
+    position: absolute;
+    width: 177px;
+    top: 10px;
+    left: 263px;
+    background-position: 0 0;
+}
+
+#regionSelect li.europe:hover {
+    background-position: 0 -155px;
+}
+
+
+#regionSelect li.middleEast {
+    background: url("../images/splash/middleeast.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 78px;
+    position: absolute;
+    width: 110px;
+    top: 133px;
+    left: 343px;
+    background-position: 0 0;
+    z-index:10;
+}
+
+#regionSelect li.middleEast:hover {
+    background-position: 0 -78px;
+}
+
+#regionSelect li.asia {
+    background: url("../images/splash/asia.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 224px;
+    position: absolute;
+    width: 270px;
+    top: 12px;
+    left: 388px;
+    background-position: 0 0;
+}
+
+#regionSelect li.asia:hover {
+    background-position: 0 -224px;
+}
+
+#regionSelect li.africa {
+    background: url("../images/splash/africa.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 189px;
+    position: absolute;
+    width: 146px;
+    top: 138px;
+    left: 264px;
+    background-position: 0 0;
+}
+
+#regionSelect li.africa:hover {
+    background-position: 0 -189px;
+}
+    
+#regionSelect li.oceania {
+    background: url("../images/splash/oceania.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 144px;
+    position: absolute;
+    width: 196px;
+    top: 212px;
+    left: 461px;
+    background-position: 0 0;
+}
+
+#regionSelect li.oceania:hover {
+    background-position: 0 -144px;
+}
+
+/** COUNTRY DROPDOWN MENU OF COUNTRY NAMES **/
+
+ul.countrySelect {
+    background: #fff;
+    padding: 12px;
+    margin: 0;
+    position: absolute;
+    z-index:100;
+    -moz-box-shadow: 0 0 5px #555;
+    -webkit-box-shadow: 0 0 5px#555;
+    box-shadow: 0 0 5px #555;
+    visibility: hidden;
+    min-width: 80px;
+  /*  behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}    
+
+#regionSelect li:hover ul.countrySelect {
+    visibility: visible !important;    
+}
+
+ul.countrySelect li {
+    display: block;
+}
+
+ul.countrySelect li a {
+    color: #004274;
+    font-size: 11px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.countrySelect li a:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
+.oceania ul.countrySelect {
+    left: 116px;
+    margin: 0 -30px;
+    top: 88px;
+}
+
+.northAmerica ul.countrySelect {
+    left: 68px;
+    top: 130px;
+}
+
+.southAmerica ul.countrySelect {
+    left: 24px;
+    top: 76px;
+}
+
+.europe ul.countrySelect {
+    left: 28px;
+    top: 97px;
+}
+
+.africa ul.countrySelect {
+    left: 16px;
+    top: 98px;
+}
+
+.asia ul.countrySelect {
+    left: 70px;
+    top: 135px;
+}
+
+.middleEast ul.countrySelect {
+    left: 0;
+    top: 48px;
+}
+
+
+/** COUNTRY DROPDOWN MENU OF COUNTRY NAMES **/
+
+ul.countrySelectNew {
+    background: #fff;
+    padding: 12px;
+    margin: 0;
+    position: absolute;
+    z-index:100;
+    -moz-box-shadow: 0 0 5px #555;
+    -webkit-box-shadow: 0 0 5px#555;
+    box-shadow: 0 0 5px #555;
+    visibility: hidden;
+    min-width: 80px;
+  /*  behavior: url(/templates/default_site/css/PIE.php); /*path realtive to FTP root*/
+}    
+
+#regionSelect li:hover ul.countrySelectNew {
+    visibility: visible !important;    
+}
+
+ul.countrySelectNew li {
+    display: block;
+}
+
+ul.countrySelectNew li a {
+    color: #004274;
+    font-size: 11px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.countrySelectNew li a:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
+.oceania ul.countrySelectNew {
+    left: 116px;
+    margin: 0 -30px;
+    top: 88px;
+}
+
+.northAmerica ul.countrySelectNew {
+    left: 63px;
+    top: 130px;
+}
+
+.southAmerica ul.countrySelectNew {
+    left: 16px;
+    top: 76px;
+}
+
+.europe ul.countrySelectNew {
+    left: 6px;
+    top: 97px;
+}
+
+.africa ul.countrySelectNew {
+    left: 4px;
+    top: 98px;
+    width: 106px;
+}
+
+.asia ul.countrySelectNew {
+    left: 45px;
+    top: 135px;
+}
+
+.middleEast ul.countrySelectNew {
+    left: 0;
+    top: 48px;
+}
+/** ------- END OF REGION SELECT MENU --------- **/
+
+
+/** ----- LEFT HAND SIDE NAV ----- **/
+aside #sideNav li a {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    padding: 13px 18px 13px 80px;
+}
+
+aside #sideNav li {
+    color: #004275;
+    list-style: none;
+    border-bottom: 1px solid #ededed;
+}
+
+aside #sideNav li.active {
+    background-color: #004275;
+    color: #fff;
+}
+
+aside #sideNav li:hover {
+    background-color: #004275;
+    color: #fff;
+}
+
+aside #sideNav li:hover a {
+    color: #fff;
+}
+
+aside #sideNav li.active a {
+    color: #fff;
+}
+
+aside #sideNav {
+    padding: 0;
+    margin: 0;
+}
+
+aside #sideNav a {
+    text-decoration: none;
+}
+
+aside .compare ul {
+    padding: 0;
+}
+
+aside .compare ul li {
+    text-align: right;
+    color: #8eae5d;
+    padding-bottom: 6px;
+    list-style: disc inside none;
+	clear:both;
+}
+
+aside .compare ul li.odd {
+    color: #b14761;
+}
+
+#productList ul#list {
+    display: block;
+    margin: 0 0 50px;
+    padding: 20px 0 0 36px;
+	overflow: hidden;
+}
+
+#productList ul#list li {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 22px 34px 22px 0;
+    padding: 0;
+    width: 373px;
+}
+
+.pnonNZ,
+.ie7 .pnonNZ {
+    width: 180px;
+}
+
+.ie7 .pnonNZ{
+	height:0;
+}
+
+#pagination.pNZ {    
+    width: 290px;
+}
+
+#pagination.pnonNZ {    
+    width: 290px;
+}
+
+.ie7 .pNZ{
+	height:0;
+	width:350px;
+}
+
+#newsPagination {
+    margin-left: -60px;    
+    border-top: 1px solid #ededed;
+    margin-top: -1px;
+    margin-right: -78px;
+	position:relative;
+	height:30px;
+}
+
+#newsPaginationInner{
+	width:650px;
+	position:relative;
+}
+
+#pagination{
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+	position:relative;
+}
+
+#searchPagination #pagination {
+	width: 460px;	
+	margin-bottom: 10px;
+}
+
+#pagination ul {
+    display: inline-block;
+    margin: 0 auto;
+	padding:0;
+  	width: auto;
+	text-align:center;
+	height:30px;
+}
+
+#pagination li {
+	text-align:center;
+    display: block;
+    float: left;
+    list-style: none;
+    color: #004275;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+#pagination li a{
+	text-align:center;
+}
+
+#pagination li.active {
+    font-weight: bold;
+}
+
+
+.prev {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #004275;    
+    text-transform: uppercase;
+    border-top: 3px solid #004275;
+    position:absolute;
+	left:0;
+    padding:0;
+	top:-1px;
+	margin-left:81px;
+}
+
+
+.nzNews .prev {
+	margin-left: 60px;
+}
+
+#productList #pagination .prev {
+	margin-left: 36px;
+}
+
+.next,
+.nextNZ {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #004275;    
+    text-transform: uppercase;
+	border-top: 3px solid #004275;
+    position:absolute;
+	top:-1px;;
+    padding: 0;
+}
+
+.next {
+	right:75px;
+}
+
+.nextNZ{
+	right:0;
+}
+
+.ie7 .next { 
+	display: block;
+}
+
+#searchPagination a {
+    display: block;
+    float: left;
+    list-style: none;
+    padding-right: 12px;
+    padding-top: 10px;
+    color: #004275;
+    font-size: 14px;
+    font-size: 1.4rem;
+	text-decoration: none;
+}
+
+#searchPagination {
+  margin-top: -1px;
+  position: relative;
+	
+}
+
+#menu li .megaMenu li.dontsplit {
+	margin-right: 40px;	
+	margin-bottom: 30px;
+}
